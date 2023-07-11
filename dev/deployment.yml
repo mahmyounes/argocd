@@ -14,18 +14,18 @@ spec:
     spec:
      containers:
      - env:
-          - name: KUBERNETES_NAMESPACE
-            valueFrom:
-              fieldRef:
-                fieldPath: metadata.namespace
-          - name: HOSTNAME
-            valueFrom:
-              fieldRef:
-                fieldPath: metadata.name
-          envFrom:
-          - configRef:
-              name: osint-configmap
-          image: nanajanashia/argocd-app:1.0
-          name: myapp
-          ports:
-          - containerPort: 8080
+       - name: KUBERNETES_NAMESPACE
+         valueFrom:
+           fieldRef:
+             fieldPath: metadata.namespace
+       - name: HOSTNAME
+         valueFrom:
+           fieldRef:
+             fieldPath: metadata.name
+       envFrom:
+         - configRef:
+           name: osint-configmap
+       image: nanajanashia/argocd-app:1.0
+       name: myapp
+       ports:
+       - containerPort: 8080
