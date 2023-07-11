@@ -23,7 +23,7 @@ spec:
            fieldRef:
              fieldPath: metadata.name
        envFrom:
-         - configMapRef:
+       - configMapRef:
            name: osint-configmap
        image: nanajanashia/argocd-app:1.0
        name: myapp
