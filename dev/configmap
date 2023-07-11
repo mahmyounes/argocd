@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: osint-confgimap
-  namespace: osint
+  namespace: myapp
 data:
   DARKBLUE_BASE_URL: https://api.darkblueintel.com
   DARKBLUE_TOKEN: ApiKey MU5kWm5JZ0IwbmhZdWJoR3N4TWg6MmE4ekY2UW5TSG1HN21ZcGY5Z055QQ==
