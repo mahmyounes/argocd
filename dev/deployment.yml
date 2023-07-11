@@ -13,8 +13,8 @@ spec:
         app: myapp
     spec:
       containers:  
-      - name: myapp
-        env:
+       - name: myapp
+       env:
           - name: KUBERNETES_NAMESPACE
             valueFrom:
               fieldRef:
