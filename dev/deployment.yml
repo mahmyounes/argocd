@@ -12,9 +12,8 @@ spec:
       labels:
         app: myapp
     spec:
-      containers:  
-       - name: myapp
-       env:
+     containers:
+     - env:
           - name: KUBERNETES_NAMESPACE
             valueFrom:
               fieldRef:
@@ -25,7 +24,8 @@ spec:
                 fieldPath: metadata.name
           envFrom:
           - configRef:
-              name: osint-confgimap        
-        image: nanajanashia/argocd-app:1.0
-        ports:
-        - containerPort: 8080
+              name: osint-configmap
+          image: nanajanashia/argocd-app:1.0
+          name: myapp
+          ports:
+          - containerPort: 8080
