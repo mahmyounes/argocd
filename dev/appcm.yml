@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: myconfig
-  namespace: myns
+  namespace: myapp
 data:
   test.conf: |
     title = "Example Config"
