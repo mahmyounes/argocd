@@ -4,5 +4,5 @@ metadata:
   name: osint-confgimap
   namespace: myapp
 data:
-  DARKBLUE_BASE_URL: change
+  DARKBLUE_BASE_URL: test
   DARKBLUE_TOKEN: ApiKey MU5kWm5JZ0IwbmhZdWJoR3N4TWg6MmE4ekY2UW5TSG1HN21ZcGY5Z055QQ==
